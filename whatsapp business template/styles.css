@@ -245,94 +245,68 @@ ul li::after {
 ul li:hover::after {
   transform: scaleX(1);
 }@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  ul {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-  }
-
-  ul li {
-    font-size: 16px;
-  }
-
   #header {
-    height: auto;
-    padding: 30px 15px;
-    text-align: center;
-  }
-
-  #header h2 {
-    font-size: 2rem;
-  }
-
-  .overlay h1 {
-    font-size: 1.8rem;
-    padding: 0 10px;
-    text-align: center;
-  }
-
-  #orderbutton {
-    width: 100%;
-    padding: 12px;
-    font-size: 1rem;
-  }
-
-  #aboutsite,
-  #howtoorder {
-    padding: 20px 15px;
-    background-size: cover;
-    background-position: center;
-  }
-
-  #aboutsite h2,
-  #howtoorder h2 {
-    font-size: 1.4rem;
-    text-align: center;
-  }
-
-  #aboutsite p,
-  #howtoorder p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    max-width: 100%;
-    text-align: center;
-    padding: 0 10px;
-  }
-
-  .whatsapp-button {
-    flex-direction: row;
-    font-size: 1rem;
-    width: 100%;
-    justify-content: center;
-    padding: 12px;
-  }
-
-  .whatsapp-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-  }
-
-  #footer {
-    flex-direction: column;
     height: auto;
     padding: 20px;
     text-align: center;
   }
 
-  #footer h2,
-  #footer p {
+  .overlay {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  nav {
+    padding: 10px 0;
+    background-color: #1c1c1c; /* optional dark background for contrast */
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+
+  nav ul li {
+    list-style: none;
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  #orderbutton {
+    width: 100%;
+    max-width: 300px;
     font-size: 1rem;
+  }
+
+  #aboutsite, #howtoorder {
+    padding: 20px;
+    text-align: center;
+  }
+
+  #footer {
+    flex-direction: column;
+    padding: 20px;
     text-align: center;
   }
 
   .art {
-    padding: 10px;
-    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .whatsapp-button {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+    font-size: 1rem;
   }
 }
